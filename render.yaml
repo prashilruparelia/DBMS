@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: dbms-study-hub
+    runtime: static
+    buildCommand: npm install --no-audit --no-fund && npm run build
+    staticPublishPath: ./public
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin

@@ -1,0 +1,1 @@
+{"name":"dbms-study-hub-cloud","version":"2.0.0","private":true,"type":"commonjs","scripts":{"build":"node build.js","dev":"node server.js","start":"node server.js","test":"node test.js","test:browser-sql":"node test-browser-sql.js"},"engines":{"node":">=22.16.0"},"dependencies":{"sql.js":"1.13.0"}}
